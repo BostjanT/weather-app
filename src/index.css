@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "montserrat", sans-serif;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.weather-container {
+  background-image: url("./img/sunny.jpg");
+  background-size: cover;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.cold {
+  background-image: url("./img/winter.png");
+}
+.rain {
+  background-image: url("./img/rainy.jpg");
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.55)
+  );
+  justify-content: flex-start;
+}
+
+.search-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 10px;
+}
+
+.search-bar {
+  display: block;
+  padding: 20px;
+  color: white;
+  font-size: 1.3rem;
+  max-width: 400px;
+  height: auto;
+  appearance: none;
+  background: none;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 7px;
+  background: rgba(54, 47, 47, 0.3);
+  box-shadow: 3px 3px 10px rgba(54, 47, 47, 0.65);
+}
+
+.search-bar:focus {
+  background: rgba(54, 47, 47, 0.65);
+  box-shadow: 3px 3px 10px rgba(54, 47, 47, 0.3);
+}
+
+.location-box {
+  margin-top: 5%;
+  text-align: center;
+}
+
+.location {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+  margin-bottom: 1rem;
+}
+
+.date {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-style: italic;
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+}
+
+.weather-box .temp {
+  position: relative;
+  display: inline-block;
+  margin: 2rem auto;
+  padding: 15px 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.55);
+
+  font-size: 4rem;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 1px 1px black;
+}
+
+.weather-box .weather {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+  text-align: center;
+}
+
+.weather-icon img {
+  display: flex;
+  text-align: center;
+  width: auto;
+  height: 200px;
+}
+
+i .wi {
+  height: 200px !important;
+  width: auto;
+}
